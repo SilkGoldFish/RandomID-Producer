@@ -12,7 +12,7 @@ int getRandomNum() {
 void PrintTime(fstream& file) {
 	time_t now = time(0);
 	tm* ltm = localtime(&now);
-	// 输出 tm 结构的各个组成部分
+	//Output all the components of tm
 	file << "Time:" << 1900 + ltm->tm_year << ".";
 	file << 1 + ltm->tm_mon << ".";
 	file << ltm->tm_mday << " ";
